@@ -1,0 +1,274 @@
+a{
+    cursor:pointer;
+}
+a.button{
+border:3px solid black;
+padding:15px 20px;
+border-radius: 20px;
+}
+a.button:hover{
+background-color:white ;
+color:black;
+}
+
+body{
+color: black;
+font-family: 'Inter',serif;
+font-size:20px;
+margin:0;
+width:100%;
+}
+.button,header nav,
+footer h1,h2{
+font-family: "Open Sans",sans-serif;
+font-style: normal;
+text-transform: uppercase;
+}
+
+header{
+  color:lightgray;
+  height: 1000px;
+  margin-right: 0;
+  background-image:url('https://imnam.cz/wp-content/uploads/2017/09/iStock-627272704-585x390.jpg' );
+  background-size:cover;
+  background-position:center;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  position: relative;
+}
+header h1{
+  font-size:50px ;
+  line-height:60px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  font-family:'Inter',serif;
+  color:rgb(230, 8, 8);
+  z-index:1;
+  
+  }
+#overlay{
+  background-color:rgba(0, 0, 0, .3);
+  position:absolute;
+  top: 0; 
+  bottom:0;
+  height: 100%;
+  width: 100%;
+  }
+
+header nav{
+    background-color:rgb(231, 226, 226);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    font-size:18px;
+    padding:20px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+}
+nav #flex-conteiner{
+    display:flex ;
+    flex-direction:row;
+    color: rgba(250, 243, 243, 0.750);
+    justify-content:space-between;
+    align-items: center;
+    padding-left:none;
+    border-bottom:2px solid grey ;
+    font-weight: bold;
+    height:70px;
+    flex-grow: 1;
+
+
+}
+nav #flex-conteiner a{
+color:black;
+border-right:2px solid black ;
+padding:10px 12px;
+margin: 0;
+}
+nav div img{
+display: flex;
+width:350px;
+height:50px;
+
+}
+
+#flex-conteiner a:hover{
+background-color: white;
+color:black;
+}
+h1{
+color: black;
+font-size:50px ;
+font-family:'Monteserrat',sans-serif;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+}
+form{
+font-size:20px ;
+color:black;
+font-weight: bold ;
+
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  height:auto;
+  align-items: center;
+  background-color:rgb(145, 140, 140);
+}
+#modale{
+position: fixed;
+top:0;
+left:0;
+height:100%;
+width:100%;
+background-color:rgba(0, 0, 0, 0.9);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 2;
+}
+#modale.hidden{
+  display:none;
+}
+#modale img{
+height: 50%;
+}
+.no-scroll{
+  overflow: hidden;
+}
+#lista{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(71, 71, 71);
+  width:100%;
+}
+#lista .birra{
+  margin:30px;
+  border: 3px solid black;
+  border-radius:50px ;
+  padding:5px;
+  width:430px;
+  display: flex;
+  flex-direction: column;
+  background-color:whitesmoke;
+}
+
+#lista .immagine1{
+height:270px;
+width:428px ;
+margin-top:3px;
+border-radius:50px ;
+}
+#lista .immagine{
+height:280px;
+width:80px;
+margin-top: 10px;
+padding-left:180px;
+
+}
+#lista .intestazione{
+font-size:16px ;
+font-family:'Roboto',sans-serif ;
+font-weight: bold;
+font-style: normal;
+text-align: center;
+text-transform: uppercase;
+color: black;
+}
+#lista .ingredienti{
+font-size: 18px;
+font-family:'Monteserrat',sans-serif ;
+font-weight: normal;
+font-style: normal;
+text-align: left;
+text-transform: uppercase;
+color:brown;
+}
+#lista .elenco{
+font-size:16px;
+font-family:'Roboto',sans-serif ;
+font-weight: normal;
+font-style: oblique;
+text-align: left;
+line-height:1em ;
+padding-left:3px ;
+color: black;
+}
+
+#lista .testo1{
+font-size:16px ;
+font-family:'Roboto',sans-serif;
+font-weight: bold;
+font-style:normal ;
+text-align:center;
+text-transform: uppercase;
+color:black;
+}
+
+#lista .paragrafo{
+font-size:16px ;
+font-family:'Monteserrat',sans-serif ;
+font-weight: normal;
+font-style: italic;
+line-height:0.3em ;
+text-align: left;
+padding-left:8px;
+}
+#lista .errore{
+font-size: 25px;
+font-family:'Roboto',sans-serif;
+font-weight: normal;
+font-style: oblique;
+text-align:left;
+color:black;
+}
+
+.caricamento{
+margin: 25px auto 0 auto;
+width:auto;
+opacity:1;
+display:block;
+
+}
+
+footer{
+    border-top:4px solid white;
+    background-color:rgb(30, 30, 30);
+    padding:40px;
+    height:250px;
+    
+    
+    }
+    footer div img{
+      display:flex;
+      height:50px;
+      width:350px;
+    
+    }
+    footer h1,h2{
+    font-size:30px;
+    line-height:60px;
+    font-weight: normal;
+    font-style: normal;
+    color:lightgray;
+    text-align: center;
+    }
+    footer p{
+    font-size:20px ;
+    font-weight:bold;
+    font-style:oblique;
+    color:slategray; 
+    text-align: left;
+    }
+
+    
